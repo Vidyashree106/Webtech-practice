@@ -82,8 +82,8 @@ img{
 .contact input{
     height: 30px;
     width: 250px;
-    background-color:rgba(0, 0, 0, 0.196);
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     transition:all 1s;
     border-radius:5px;
