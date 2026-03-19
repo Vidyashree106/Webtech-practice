@@ -342,7 +342,7 @@ h3{
 .page2{
     h3{
         text-align: center;
-        padding: 5vh 0;
+        padding: 8vh 0;
     }
     ul{
         display:grid;
@@ -354,6 +354,18 @@ h3{
         font-size: 25px;
         font-weight: bold;
     }
+}
+
+.footer{
+    background: goldenrod;
+    padding:2vh 0;
+    p{
+        text-align: center;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+    }
+
 }
 
 
