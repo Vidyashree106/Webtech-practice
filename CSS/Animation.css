@@ -1,0 +1,185 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    background: skyblue;
+    height: 10vh;
+    place-content: center;
+
+}
+.box{
+    border: solid 1px white;
+    background: yellow;
+    height: 300px;
+    width: 300px;
+    margin: 10vh auto;
+
+    animation-name: changedesign;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+/*@keyframes changedesign {
+    from{
+        background: palevioletred;
+        border-radius: 0%;
+        }
+        to{
+            background: purple;
+            border-radius: 50%;
+        }   
+}*/
+
+@keyframes changedesign {
+    0%{
+        border-radius: 0%;
+        background: red;
+    }
+    50%{
+        border-radius: 50%;
+        background: blue;
+    }
+    100%{
+        border-radius: 0%;
+        background: red;
+    }    
+}
+
+.box2{
+    border: solid 1px white;
+    background: yellow;
+    height: 200px;
+    width: 200px;
+    margin: 10vh auto;
+
+    animation-name: changes;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes changes {
+    0%{
+        border-radius: 0%;
+        background:red;
+    }
+    25%{
+        border-radius: 0%;
+        width: 400px;
+        background: blue;
+    }
+    50%{
+        width: 400px;
+        border-radius: 50%; 
+        background: green;
+    }
+    75%{
+        background: yellow;
+        border-radius: 50%;
+    }
+    100%{
+        background: red;
+    }
+    }
+.box3{
+    border:solid 1px black;
+    background-image: conic-gradient(red,green,red);
+    height: 300px;
+    width: 300px;
+    margin: 10vh auto;
+
+    animation: rotating 5s infinite;
+}   
+
+@keyframes rotating {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(360deg);
+        background-image: conic-gradient(yellow,purple);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+.loading{
+    border: none;
+    height: 300px;
+    width: 300px;
+    background: conic-gradient(blue,white);
+    border-radius: 50%;
+    margin: 20vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: load 5s infinite linear reverse;
+}
+.block{
+  border: none;  
+  height: 90%;
+  width: 90%;
+  background: white;
+  border-radius: 50%;
+}
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.container{
+    height: 400px;
+    width: 400px;
+    background: wheat;
+    margin: 20vh auto;
+}
+.square{
+    height: 100px;
+    width: 100px;
+    background: yellow;
+    animation: run 3s infinite;
+}
+@keyframes run {
+    0%{
+        position: relative;
+        top: 0;
+        left: 0;
+        background: red;
+    }
+    25%{
+        position: relative;
+        top: 0px;
+        left: 300px;
+        background: green;
+    }
+    50%{
+        position: relative;
+        top: 300px;
+        left: 300px;
+        background: purple;
+    }
+    75%{
+        position: relative;
+        top: 300px;
+        left: 0;
+        background: orange;
+    }
+    100%{
+        position: relative;
+        top: 0;
+        left: 0;
+        background: lightgreen;
+    }
+    
+}

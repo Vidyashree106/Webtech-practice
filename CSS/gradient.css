@@ -8,9 +8,9 @@
     width: 300px;
 }
 .color1{
-
     background-image: linear-gradient(to top left,pink 50%,skyblue 50%);
 }
+
 .color2{
     background: radial-gradient(circle at bottom left, red 30%,yellow 50%,orange);
 }
