@@ -1,0 +1,117 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container{
+    background-color:white;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "head head"
+    "aside main"
+    "footer footer";
+    grid-template-rows: 15vh 100vh 10vh;
+}
+header{
+    grid-area: head;
+    margin: 2vh 3vw;
+    place-content: center;
+}
+aside{
+    border: solid 1px gray;
+    grid-area: aside;
+    .leftside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        img{
+            margin-bottom: 40vh;
+        }
+   
+        h1{
+            font-size: 50px;
+            text-align: left;
+            margin: 50vh 1vw;
+            color: rgba(0, 0, 255, 0.825);
+        }
+    }
+}
+main{
+    border: solid 1px gray;
+    grid-area: main;
+    .m1{
+        margin: 20vh auto;
+        display: grid;
+        justify-content: center;
+        place-content: center;
+        row-gap: 3vh;
+        button,input{
+            border-radius: 50px;
+            height: 8vh;
+            width: 40vw;
+            text-align: center;
+            cursor: pointer;
+        }
+        button{
+            background: rgb(32, 85, 198);
+            font-size: 20px;
+            color: white;
+        }
+        h1{
+            color: black;
+        }
+        a{
+            text-align: center;
+        }
+        p{
+        font-weight: bold;
+        }
+    }
+    .btn{.b{
+            border: solid 1px rgb(32, 85, 198);;
+            background-color: white;
+            color: rgb(32, 85, 198);
+            }
+        }
+    
+    .m2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: gray;
+    row-gap: 2vh;
+    margin: 10vh auto;
+    a{
+        text-decoration: none;
+        color: gray;
+        column-gap: 2vw;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        column-gap: 2vw;
+    }
+}
+
+@media (min-width:1px) and (max-width:576px){
+
+main{
+}
+aside{
+    display: none;
+}
+    
+}
