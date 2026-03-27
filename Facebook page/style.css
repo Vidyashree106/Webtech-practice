@@ -22,6 +22,7 @@ header{
 aside{
     border: solid 1px gray;
     grid-area: aside;
+    flex-wrap: wrap;
     .leftside{
     display: flex;
     justify-content: center;
@@ -106,12 +107,75 @@ footer{
     }
 }
 
-@media (min-width:1px) and (max-width:576px){
+@media (min-width:1px) and (max-width:1000px){
 
+
+    #container{
+    background-color:white;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "head head"
+    "main main"
+    "footer footer";
+    grid-template-rows: 15vh 100vh 10vh;
+}
 main{
+    border: solid 1px gray;
+    grid-area: main;
+    width: 100%;
+    .m1{
+        margin: 20vh auto;
+        display: grid;
+        justify-content: center;
+        place-content: center;
+        row-gap: 3vh;
+        button,input{
+            border-radius: 50px;
+            height: 8vh;
+            width: 80vw;
+            text-align: center;
+            cursor: pointer;
+        }
+        button{
+            background: rgb(32, 85, 198);
+            font-size: 20px;
+            color: white;
+        }
+        h1{
+            color: black;
+        }
+        a{
+            text-align: center;
+        }
+        p{
+        font-weight: bold;
+        }
+    }
 }
 aside{
     display: none;
+    border: none;
 }
-    
+
+footer{
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: gray;
+    row-gap: 2vh;
+    margin: 10vh 2vw;
+    a{
+        text-decoration: none;
+        color: gray;
+        column-gap: 2vw;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        column-gap: 2vw;
+    }
+}    
 }
