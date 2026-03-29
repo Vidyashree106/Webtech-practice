@@ -65,3 +65,6 @@ console.log(10=='10')&&(true===1)||(10===10)
 console.warn('Bitwise operator')
 console.log(5&1)
 console.log(5|1)
+
+//Assignment operator =
+let a=10
