@@ -14,12 +14,12 @@ console.log(num)
 //Unary operator
 let a=10
 let b=5
-let c=a++ + ++b + b-- + a--
+let c=a++ + ++b + b-- + a--;
 console.log(c)
 
 let a1=5
 let b1=5
-let c1=a++ + a++ + --b + b-- + a++ + --a + ++b + a-- + --b 
+let c1=a++ + a++ + --b + b-- + a++ + --a + ++b + a-- + --b ;
 console.log(c1)
 
 //Turnary operator
