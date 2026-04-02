@@ -1,0 +1,88 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    background: rgba(255, 255, 255, 0.422);
+    width: 100%;
+    top: 0;
+    position: fixed;
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    li{
+        font-weight: bold;
+        margin: 2vh 0;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    a:hover{
+        color: red;
+    }
+    img{
+        border-radius: 50px;
+    }
+}
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    border: solid 1px black;
+    background:url(./Images/lavender.jpg) no-repeat center/cover;
+    .circle{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        place-content: center;
+        margin: 50vh auto;   
+    }
+    .c1{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        background: white;
+    }
+    .c2{
+        height: 180px;
+        width: 180px;
+        border-radius: 100px;
+        background-color: green;
+       h1{
+        text-align: center;
+        margin: 2vh;
+       }
+    }
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background:gray;
+    ul{
+        list-style: none;
+         display:flex;
+         justify-content: space-evenly;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+    }
+    li{
+        padding: 10vh 2vw;
+    }
+    h1{
+        color: white;
+    }
+    p{
+        color: yellow;
+        font-size: 30px;
+    }
+}
