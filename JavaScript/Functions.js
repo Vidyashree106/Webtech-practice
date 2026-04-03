@@ -110,27 +110,113 @@ function sum(a=0,b=0){
 sum()
 sum(20,30)
 
-//WAP to print odd number from 50-60 both for loop and while loop using general function with parameter
-function oddnum(start,end){
-    console.warn(`Odd numbers from ${start} to ${end} are:`)    
-    for(let i=start;i<=end;i++){
-        if(i%2==1)
-        console.log(i);
-    }
-}
-oddnum(50,60)
 
-// WAP to check the even or odd number from 60-70 using both for loop and while loop using general function with parameter
-function evenodd(start,end){
-    console.warn(`Even and odd numbers from ${start} to ${end} are:`)
-    for(let i=start;i<=end;i++){
-        if(i%2==0){
-            console.log(`${i} is even`)
-        }
-        else{
-            console.log(`${i} is odd`)
-        }
-    }
+// function without parameter and with return statements
+function fun2(){
+    let a=100
+    let b=200
+    let sum=a+b
+    console.log(sum)
+    return `sum of ${a} + ${b} = ${sum}`
 }
-evenodd(60,70)
+let res =fun2()
+console.log(res);
+
+
+// function with parameter and return statements
+function myname(fname='',lname=''){
+    return(`Hello ${fname} ${lname}`);
+}
+let n1=myname('Dinga','Raja')
+console.log(n1)
+console.log(myname('Dingi'))
+
+// WAP to check given number even or odd with general function with parameter and return statements
+function evenodd(num=Number()){
+    if (num%2==0)
+    return(`${num} is even`);
+else
+    return(`${num} is odd`)
+}
+let n=evenodd(20)
+console.log(n);
+console.log(evenodd(3))
+
+//OR - using turnary operator
+function eo(num2=Number()){
+    return(num2%2==0) ? 'Even' :'Odd'
+}
+let n5=eo(20)
+console.log(n5);
+console.log(eo(3))
+
+//Anonymous function
+console.warn('Anonymous function')
+//function with parameter and with return statements
+let fun1=function(fname){
+    return('Hello '+fname)
+}
+let r=fun1('Vidya')
+console.log(r)
+
+//function without parameter and without return statements
+let f1=function(){
+    console.log('Hello')
+}
+f1()
+
+//function with parameter and without return statements
+let f2=function(fname=''){
+    console.log('Hello '+fname)
+}
+f2('Kiran')
+
+//function without parameter and with return statements
+let f3=function(){
+    let fname='Vidya'
+    let lname='Achar'
+    return `${fname} ${lname}`
+}
+let r2=f3()
+console.log(r2)
+console.log(f3())
+
+//Arrow function
+console.warn('Arrow function')
+//function with parameter and with return statements
+let arrow=(a=0,b=0)=>{
+    let res = a+b;
+    return(`${a} + ${b} = ${res}`);
+}
+let sum5=arrow(10,20)
+console.log(sum5);
+
+//function with parameter and without return statements
+let arrow1=(m=0,n=0)=>{
+        let o = m+n;
+    console.log(`${m} + ${n} = ${o}`);
+}
+arrow1(100,200)
+
+//function without parameter and without return statements
+let arrow2=()=>{
+    let e=100
+    let f=20
+    let g=e+f
+    console.log(`${f} + ${f} = ${g}`);
+}
+arrow2()
+
+//function without parameter and with return statements
+let arrow3=()=>{
+    let m1=30
+    let m2=45
+    let op=m1+m2
+    return(`${m1} + ${m2} = ${op}`)
+}
+let op1=arrow3()
+console.log(op1)
+
+
+
 
