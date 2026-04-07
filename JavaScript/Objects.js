@@ -97,3 +97,53 @@ let p={
 }
 p.fullname()
 p.calculateage()
+
+
+// creting object using new keyword
+// Date object model
+let d=new Date()
+console.log(d)
+console.log(typeof d);
+console.log(d.getDate());
+console.log(d.getDay());
+console.log(d.getHours());
+console.log(d.getDate());
+console.log(d.getMonth()+1);
+console.log(d.getFullYear());
+console.log(d.getDay()+1);
+console.log(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
+console.log(`${d.getDate()}:${d.getMonth()}:${d.getFullYear()}`);
+
+// Creating object using constructor function
+
+function Car1(name='',color=''){
+    this.car1name=name
+    this.car1color=color
+}
+let c1=new Car1('KIA')
+console.log(c1);
+let c2=new Car1('BMW','black')
+console.log(c2);
+
+// Example
+
+function Per(fnm,lnm,yyyy){
+    this.fname=fnm
+    this.lname=lnm
+    this.year=yyyy
+    this.fullname=function(){
+        return(`My name is ${this.fname} ${this.lname}`);
+    }
+    this.calculateAge=function() {
+        let dateObj=new Date()
+        let age1=dateObj.getFullYear()-this.year
+        return(`${this.fname} age is ${age1}`)
+    }
+}
+let p1=new Per('vidya','achar',2002)
+console.log(p1)
+console.log(p1.fullname())
+console.log(p1.calculateAge())
+
+
+
