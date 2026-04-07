@@ -218,5 +218,40 @@ let op1=arrow3()
 console.log(op1)
 
 
+//Self invoking function
+console.warn('Self invoking function')
+let x=(function(a,b){
+    let sum=a+b
+    return `${a} - ${b} = ${sum}`
+})(10,20)
+console.log(x);
 
+// Call back function
+console.warn('Call back function')
+let num5=()=>{
+    return 300
+}
+let s=(z,x)=>{
+    let res=z+x
+    console.log(res);
+}
+s(num5(),200)
 
+// OR
+let num6=()=>{
+    return 300
+}
+let s1=(z1,x1)=>{
+    let result=z1()+x1
+    console.log(result)
+}
+s1(num6,600)
+
+// OR
+let s2=(z2,x2)=>{       //s2 is a high order function
+    let res1=z2()+x2
+    console.log(res1);
+}
+s2(()=>{
+    return 200
+},200)
