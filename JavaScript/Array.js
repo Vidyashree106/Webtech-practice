@@ -137,8 +137,7 @@ console.warn('for loop')
 let r1=[]
 for(let i=0;i<array.length;i++){
     if(array[i]%2==0){
-        let r2=array[i]
-        r1[r1.length]=r2
+        r1[r1.length]=array[i]
     }
 }
 console.log(r1)
@@ -149,8 +148,7 @@ console.warn('for-of loop')
 let r3=[]
 for(let key of array){
     if(key%2==0){
-        let r4=key
-        r3[r3.length]=r4
+        r3[r3.length]=key
     }
 }
 console.log(r3)   
@@ -161,8 +159,7 @@ console.warn('forEach loop')
 let r5=[]
 array.forEach((elem)=>{
     if(elem%2==0){
-        let r6=elem
-        r5[r5.length]=r6
+        r5[r5.length]=elem
     }
 })
 console.log(r5)   
@@ -185,6 +182,61 @@ let even1=array.filter((elem)=>{
 console.log(even1)
 
 //-----------------------------------------------------------------------------------------------------------------//
+
+// Special behavior of arrow key
+
+let arrow1=()=> console.log("Hello")
+arrow1()
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+let arrow2 = fname=>{
+    console.log(`Hello ${fname}`)
+}
+arrow2("Dinga")
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+let arrow3=_=>{
+    console.log("Hello")
+}
+arrow3()
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+let arrow4=()=>'Hello'
+console.log(arrow4())
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+//WAP to check even / odd number using arrow function with parameter and return type
+let evenOdd=(num)=>num%2==0?"Even":"Odd"
+console.log(evenOdd(20))
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+// Reduce method
+// WAP to print large using reduce method
+let ar=[2,4,3,7,5]
+console.log(ar)
+let r=ar.reduce((preval,curval)=>{
+    let sum=preval+curval
+    return sum
+})
+console.log(r)
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+// WAP to print large number using reduce method
+let array1=[2,4,3,7,5]
+console.log(array1)
+let large=array1.reduce((preval,curval)=>{
+    return preval>curval?preval:curval
+})
+console.log(large)
+
+//-----------------------------------------------------------------------------------------------------------------//
+
 
 
 
