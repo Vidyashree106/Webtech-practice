@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.box{
+    border: solid 2px black;
+    height: 150px;
+    width: 150px;
+    place-content: center;
+    text-align: center;
+}
+button{
+    display: block;
+    width: 30%;
+    padding: 2vh 0;
+    margin: 2vh auto;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+img{
+    height: 200px;
+    width: 300px;
+    display: block;
+    margin: 5vh auto;
+    box-shadow: 0 0 10px black;
+    padding: 2vh 2vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#btn{
+    background: green;
+    color: white;
+}
