@@ -16,3 +16,17 @@ button{
     margin: 2vh auto;
     padding: 2vh 5vw;
 }
+.on,.off{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.on{
+    background: green;
+}
+.off{
+    background: red;
+}
+button{
+    cursor: pointer;
+}

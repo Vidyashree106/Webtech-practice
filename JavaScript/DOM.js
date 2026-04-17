@@ -39,3 +39,16 @@ let onoff=()=>{
         btn.style.background='green'
     }
 }
+
+let daynight=()=>{
+    let bton=document.getElementById('bton')
+    if(bton.innerText==='DAY'){
+        document.body.style.background='black'
+        document.body.style.color='white'
+        bton.innerText='NIGHT'
+    }else{
+        document.body.style.background='white'
+        document.body.style.color='black'
+        bton.innerText='DAY'
+    }
+}
