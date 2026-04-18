@@ -15,10 +15,26 @@
         <input type="Place" placeholder="Enter the place">
          <input type="date">
         <button>Print details</button>
-        
+    </form>
+    <h2 id="printname"></h2>
+
+    <form onsubmit="Validation(event)">
+        <input type="email" placeholder="Enter your email">
+        <input type="password" placeholder="Enter the password">
+        <div class="err"></div>
+        <button>Submit</button>
     </form>
 
-    <h2 id="printname"></h2>
+    <form onsubmit="loginpage(event)">
+        <input type="email" placeholder="Enter the email">
+        <input type="password" placeholder="Enter the password">
+        <div class="msg"></div>
+        <button>Login</button>
+    </form>
+
+    <button onclick="currentlocation()">
+        location
+    </button>
 
     <script src="./DOM_forms.js"></script>
 </body>

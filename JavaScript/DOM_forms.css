@@ -1,5 +1,6 @@
 input{
-    padding: 2vh 10vw;
+    height: 8vh;
+    width: 100%;
     color: black;
     border: solid 2px black;
     border-radius: 10px;
@@ -8,7 +9,8 @@ input{
     font-size: 20px;
     font-weight: bold;
     font-family: sans-serif;
-      box-shadow: 3px 3px 10px black;
+    box-shadow: 3px 3px 10px black;
+    text-align: left;
 }
 button{
     display: block;
@@ -40,4 +42,9 @@ h2{
     text-align: center;
     background: linear-gradient(skyblue,white);
     box-shadow: 3px 3px 10px black
+}
+.err,.msg{
+    color: red;
+    text-align: right;
+    font-weight: bold;
 }
