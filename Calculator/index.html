@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="calcu">
+        <ul>
+        <li><input type="text" placeholder="Calculate"  onclick="getValue(event)"></li>
+
+        <li>
+        <button class="fc" onclick="clearone()">AC</button>
+        <button class="fc" onclick="clearall()">CE</button>
+        <button class="fc" onclick="getValue(event)">+/-</button>
+        <button class="fc" onclick="getValue(event)">÷</button>
+        </li>
+        
+       <li>
+        <button onclick="getValue(event)">7</button>
+        <button onclick="getValue(event)">8</button>
+        <button onclick="getValue(event)">9</button>
+        <button class="fc" onclick="getValue(event)">x</button>
+       </li>
+     
+        <li>
+        <button onclick="getValue(event)">4</button>
+        <button onclick="getValue(event)">5</button>
+        <button onclick="getValue(event)">6</button>
+        <button class="fc" onclick="getValue(event)">-</button>
+        </li>
+    
+        <li>
+        <button onclick="getValue(event)">1</button>
+        <button onclick="getValue(event)">2</button>
+        <button onclick="getValue(event)">3</button>
+        <button class="fc" onclick="getValue(event)">+</button>
+        </li>
+    
+        <li>
+        <button class="fc" onclick="getValue(event)">%</button>
+        <button onclick="getValue(event)">0</button>
+        <button class="fc" onclick="getValue(event)">.</button>
+        <button class="fc" onclick="calculate()">=</button>
+        </li>
+         </ul>   
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
