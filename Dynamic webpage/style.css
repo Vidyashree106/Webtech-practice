@@ -1,0 +1,26 @@
+#root{
+    border: solid 5px black;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5,auto);
+    row-gap: 2vh;
+    column-gap: 2vw;
+    background: radial-gradient(skyblue,white,skyblue);
+    img{
+        margin: 2vh 0;
+        border: solid 2px black;
+        height: 200px;
+        width: 200px;
+        border-radius: 30px;
+        box-shadow: 3px 3px 10px black;
+    }
+    .title{
+        text-align: center;
+         margin: 1vh 0;
+         font-size: 40px;
+         font-weight: bold;
+    }
+}
+h1{
+    text-align: center;
+}
