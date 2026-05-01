@@ -1,3 +1,4 @@
+// Output statements
 document.write('Hai') //no_space
 document.write('Hello')
 document.write('<br>')
@@ -12,6 +13,7 @@ console.warn("I am warning msg")
 
 alert('becareful😡')//Popup print statement
 
+// Keywords and variables
 console.warn('var keyword')
 
 var a;          //? declation

@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1 align="center">Application Form</h1>
-        <table  align="center" rules="all" height="100" width="900" bordercolor="black">
+        <table border="1" align="center" rules="all" height="100" width="900" bordercolor="black">
             <form>
             <tr height="50" width="25">
                 <th>
@@ -80,7 +80,7 @@
                 </th>
                 <td>&nbsp;
                     <label for="e">English</label>
-                    <input type="checkbox" name="lang" value="eng" id="e">
+                    <input type="checkbox" name="lang" value="eng" id="e" disabled>
                     <label for="k">Kannada</label>
                     <input type="checkbox" name="lang" value="kan" id="k">
                     <label for="h">Hindi</label>
@@ -94,7 +94,7 @@
                 <td>&nbsp;
                     <select name="Place">
                         <option value="bng">Banglore</option>
-                        <option value="tmk">Tumkur</option>
+                        <option value="tmk" selected>Tumkur</option>
                         <option value="mys">Mysore</option>
                         <option value="ker">Kerala</option>
                     </select>
@@ -106,7 +106,7 @@
                 </th>
                 <td>&nbsp;
                     <label for="m">Male</label>
-                    <input type="radio" name="Gender" value="Male" id="m">
+                    <input type="radio" name="Gender" value="Male" id="m" checked>
                     <label for="f">Female</label>
                     <input type="radio" name="Gender" value="Female" id="f">
                     <label for="o">Others</label>
